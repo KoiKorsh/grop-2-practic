@@ -10,12 +10,28 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-   <div class="wrapper"> <!--  Этот элемент является корневым вместо body -->
+   <div class="wrapper">
         <header class="header"><!-- Симантический тег header содержит в себе шапку сайта, обычно в неё находится логотип и навигация
             (для навигации используется тег nav)-->
-            <div class="header__container _container"></div><!--Все классы или переменные начинающиеся с "_" являются служебными, 
+            <div class="header__container _container">
+                <div class="header__logo-mail-wrapper">
+                    <div class="header__logo-container">
+                        <a href="#"><img src="./src/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="header__mail-container">
+                        <a href="mailto:mail@blanko.com">mail@blanko.com</a>
+                    </div>  
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item"><a href="#" class="header__nav__link">Landing</a></li>
+                        <li class="header__nav-list-item"><a href="#" class="header__nav__link">All pages</a></li>
+                        <li class="header__nav-list-item"><a href="#" class="header__nav__link">Template</a></li>
+                        <li class="header__nav-list-item"><a href="#" class="header__nav__link _button">Purchase template</a></li>
+                    </ul>
+                </nav>
+            </div><!--Все классы или переменные начинающиеся с "_" являются служебными, 
                 в нашем случае это нужно для создания элемента, который мы будем использовать много раз-->
-                <div class="header__container-logo"></div>
         </header>
         <main class="main"> <!-- Здесь располагается основной контент сайта-->
             <section class="main__major-section major-section"><!--Такая запись класса подразумевает, что мы вышли из элемента 
